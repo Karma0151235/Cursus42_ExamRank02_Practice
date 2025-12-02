@@ -43,7 +43,7 @@ char	**ft_split(char *str)
 	{
 		while (str[i] == ' ' || str[i] == '\t' || str[i] == '\n')
 			i++;
-		if (!(str[i] == ' ' || str[i] == '\t' || str[i] == '\n'))
+		if (str[i] != '\0' && !(str[i] == ' ' || str[i] == '\t' || str[i] == '\n'))
 		{
 			arr[j] = word(&str[i]);
 			j++;
